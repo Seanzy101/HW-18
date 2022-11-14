@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(210, 210, 210);
 }
 
 .top {
@@ -76,4 +76,71 @@ margin-top: 0%;
     padding: 50px;
     margin-top: auto;
     margin-bottom: 0;
+}
+
+/*.mySkills {
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  background-color: blue;
+}*/
+
+.flexContainer {
+  margin-left: auto;
+  margin-right: 50%;
+  display: flex;
+  width: 33%;
+  margin: center;
+  padding: 15px;
+  /*flex-direction:;*/
+  
+}
+
+.flexContainer div{
+  margin: 15px;
+  padding: 25px;
+  background-color: #4E6C50;
+  color: white;
+}
+
+/*body h1 {
+  margin-left: 50%;
+  margin-right: aut0;
+  font: 50;
+}*/
+
+.workGrid {
+  background-color: #4E6C50; 
+  color: white;
+  display: grid;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left: 33%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  /*padding: 100px;*/
+  grid-gap: 5px;
+  grid-template-columns: 300px 300px;
+  /*grid-auto-rows: minmax(250, auto);*/
+  grid-template-areas:
+    /*"head"*/
+    'img1 img2'
+    'info1 info2'
+
+}
+/*.myWork h1{
+  grid-area: head;
+
+}*/
+.DOT-img{
+  grid-area: img1;
+}
+.DOT-info{
+  grid-area: info1;
+}
+.HAB-img{
+  grid-area: img2;
+}
+.HAB-info{
+  grid-area: info2;
 }
